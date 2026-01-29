@@ -1,4 +1,4 @@
-def solutioin(my_string):
+def solution(my_string):
     vowels = ['a', 'e', 'i', 'o', 'u']
     
     for c in vowels:
