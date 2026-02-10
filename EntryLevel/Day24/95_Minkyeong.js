@@ -1,12 +1,9 @@
-function solution(i, j, k) {
-  let str = "";
-
-  for (let start = i; start <= j; start++) {
-    str += start;
-  }
-
-  return str.split("").filter((ch) => ch === String(k)).length;
+function solution(before, after) {
+  return before.split("").sort().join("") === after.split("").sort().join("")
+    ? 1
+    : 0;
 }
 
-// O(n)
-// 범위 내에 있는 숫자를 모두 하나의 문자열로 합친 후 특정 숫자의 개수를 세기
+// O(n log n)
+// 배열은 서로 같은지 비교할 수 없다.
+// 비교 시 주소값을 비교하기 때문에 false를 반환.
