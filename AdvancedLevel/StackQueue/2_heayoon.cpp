@@ -25,6 +25,9 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 // 시간복잡도 O(n)
 // 공간복잡도 O(n)
 
+//정수 나눗셈으로 올림 계산
+// (a + b - 1) / b 
+
 
 // 다른 풀이
 // days 벡터 정의 안함. 반복문 1개
