@@ -13,7 +13,7 @@ int solution(vector<vector<int>> jobs) {
         vector<tuple<int,int,int>>,
         greater<tuple<int,int,int>>
         > pq;
-    sort(jobs.begin(), jobs.end());     // {소요시간, 요청시간}을 오름차순으로 정렬 
+    sort(jobs.begin(), jobs.end());     // {요청시간, 소요시간}을 오름차순으로 정렬 
     int time=0;     // 현재 시간
     int i=0;        // 작업 번호
     while(!pq.empty() || i<jobs.size()){
